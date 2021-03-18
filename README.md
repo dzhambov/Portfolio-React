@@ -62,7 +62,7 @@ _Have a bug or an issue with this application? Open a new issue [here]() on GitH
 
 * React
 * HTML
-* CSS
+* TailwindCSS
 * Sanity
 * Git
 
