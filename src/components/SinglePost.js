@@ -10,7 +10,7 @@ function urlFor(source) {
 }
 
 export default function SinglePost() {
-  const [ singlePost, setSinglePost ] = useState(null);
+  const [singlePost, setSinglePost] = useState(null);
   const { slug } = useParams();
 
   useEffect(() => {
@@ -55,13 +55,15 @@ export default function SinglePost() {
             src={singlePost.mainImage.asset.url} 
             alt={singlePost.title}
             className="w-full object-cover rounded-t"
-            style={{ height: "400px" }}/>
+            style={{ height: "400px" }}
+          />
         </header>
         <div className="px-16 lg:px-48 py-12 lg:py-20 prose lg:xl max-w-full">
           <BlockContent 
             block={singlePost.body} 
             projectId="50wrpx7w" 
-            dataset="production"/>
+            dataset="production"
+          />
         </div>
       </article>
     </main>
